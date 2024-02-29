@@ -1,0 +1,14 @@
+@PatchBugRepo_HostAddress = https://localhost:7070
+@id = 81e3c357-db39-4373-abb4-c8231ef26a72
+
+GET {{PatchBugRepo_HostAddress}}/example/@id
+Accept: application/json
+Content-Type: application/json
+
+{
+    "op": "replace",
+    "path": "firstName",
+    "value": "Testo"
+}
+
+###
